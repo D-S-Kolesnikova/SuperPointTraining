@@ -1,0 +1,8 @@
+numpy
+scipy
+opencv-python
+opencv-contrib-python
+tqdm
+pyyaml
+flake8
+jupyter

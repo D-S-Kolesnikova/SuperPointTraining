@@ -1,0 +1,602 @@
+[11/02/2019 19:38:35 INFO] Running command TRAIN
+[11/02/2019 19:38:35 INFO] Number of GPUs detected: 3
+[11/02/2019 19:38:39 WARNING] From /cluster/apps/python/3.6.4/lib64/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/base.py:198: retry (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the retry module or similar alternatives.
+2019-11-02 19:39:28.757119: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-11-02 19:39:29.153427: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1344] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:0d:00.0
+totalMemory: 10.92GiB freeMemory: 10.77GiB
+2019-11-02 19:39:29.345179: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1344] Found device 1 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:0f:00.0
+totalMemory: 10.92GiB freeMemory: 10.77GiB
+2019-11-02 19:39:29.536103: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1344] Found device 2 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:07:00.0
+totalMemory: 10.92GiB freeMemory: 10.77GiB
+2019-11-02 19:39:29.540882: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0, 1, 2
+2019-11-02 19:39:32.170507: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-11-02 19:39:32.170557: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 1 2 
+2019-11-02 19:39:32.170566: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N Y Y 
+2019-11-02 19:39:32.170570: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 1:   Y N Y 
+2019-11-02 19:39:32.170575: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 2:   Y Y N 
+2019-11-02 19:39:32.172337: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10430 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:0d:00.0, compute capability: 6.1)
+2019-11-02 19:39:32.354025: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10430 MB memory) -> physical GPU (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:0f:00.0, compute capability: 6.1)
+2019-11-02 19:39:32.542266: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 10430 MB memory) -> physical GPU (device: 2, name: GeForce GTX 1080 Ti, pci bus id: 0000:07:00.0, compute capability: 6.1)
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:33 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:34 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:34 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:34 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:34 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:34 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:34 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:34 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:34 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:34 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:34 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:35 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:35 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:35 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:35 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:35 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:35 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:35 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:35 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:35 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:35 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:35 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:35 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:35 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:35 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:36 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:38 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:39 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:39 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:39 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:39 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:39 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:39 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:39 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:39 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:39 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:39 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:39 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:39 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:39 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:39 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:39 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:39 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:39 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:39 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:39 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:39:39 INFO] Scale of 0 disables regularizer.
+2019-11-02 19:39:39.322105: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0, 1, 2
+2019-11-02 19:39:39.322283: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-11-02 19:39:39.322299: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 1 2 
+2019-11-02 19:39:39.322305: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N Y Y 
+2019-11-02 19:39:39.322311: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 1:   Y N Y 
+2019-11-02 19:39:39.322315: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 2:   Y Y N 
+2019-11-02 19:39:39.323705: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10430 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:0d:00.0, compute capability: 6.1)
+2019-11-02 19:39:39.323890: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10430 MB memory) -> physical GPU (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:0f:00.0, compute capability: 6.1)
+2019-11-02 19:39:39.324020: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 10430 MB memory) -> physical GPU (device: 2, name: GeForce GTX 1080 Ti, pci bus id: 0000:07:00.0, compute capability: 6.1)
+[11/02/2019 19:39:58 INFO] Start training
+2019-11-02 19:40:09.360112: I tensorflow/core/kernels/cuda_solvers.cc:159] Creating CudaSolver handles for stream 0x3cd62670
+2019-11-02 19:40:13.459813: I tensorflow/core/kernels/cuda_solvers.cc:159] Creating CudaSolver handles for stream 0x3cfd1070
+2019-11-02 19:40:14.129922: I tensorflow/core/kernels/cuda_solvers.cc:159] Creating CudaSolver handles for stream 0x3cfddb80
+2019-11-02 19:40:24.527844: W tensorflow/core/common_runtime/bfc_allocator.cc:275] Allocator (GPU_0_bfc) ran out of memory trying to allocate 4.12GiB.  Current allocation summary follows.
+2019-11-02 19:40:24.527912: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (256): 	Total Chunks: 56, Chunks in use: 55. 14.0KiB allocated for chunks. 13.8KiB in use in bin. 5.1KiB client-requested in use in bin.
+2019-11-02 19:40:24.527933: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (512): 	Total Chunks: 25, Chunks in use: 20. 12.8KiB allocated for chunks. 10.0KiB in use in bin. 10.0KiB client-requested in use in bin.
+2019-11-02 19:40:24.527949: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (1024): 	Total Chunks: 15, Chunks in use: 12. 16.5KiB allocated for chunks. 12.5KiB in use in bin. 12.0KiB client-requested in use in bin.
+2019-11-02 19:40:24.527964: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (2048): 	Total Chunks: 2, Chunks in use: 0. 5.5KiB allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2019-11-02 19:40:24.527977: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (4096): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2019-11-02 19:40:24.527989: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (8192): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2019-11-02 19:40:24.528002: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (16384): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2019-11-02 19:40:24.528014: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (32768): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2019-11-02 19:40:24.528028: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (65536): 	Total Chunks: 3, Chunks in use: 0. 232.8KiB allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2019-11-02 19:40:24.528043: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (131072): 	Total Chunks: 3, Chunks in use: 3. 432.0KiB allocated for chunks. 432.0KiB in use in bin. 432.0KiB client-requested in use in bin.
+2019-11-02 19:40:24.528058: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (262144): 	Total Chunks: 2, Chunks in use: 2. 544.0KiB allocated for chunks. 544.0KiB in use in bin. 544.0KiB client-requested in use in bin.
+2019-11-02 19:40:24.528072: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (524288): 	Total Chunks: 7, Chunks in use: 5. 5.02MiB allocated for chunks. 3.45MiB in use in bin. 3.45MiB client-requested in use in bin.
+2019-11-02 19:40:24.528097: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (1048576): 	Total Chunks: 18, Chunks in use: 13. 29.77MiB allocated for chunks. 22.22MiB in use in bin. 22.22MiB client-requested in use in bin.
+2019-11-02 19:40:24.528112: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (2097152): 	Total Chunks: 10, Chunks in use: 9. 35.16MiB allocated for chunks. 31.64MiB in use in bin. 31.64MiB client-requested in use in bin.
+2019-11-02 19:40:24.528132: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (4194304): 	Total Chunks: 11, Chunks in use: 9. 72.67MiB allocated for chunks. 61.50MiB in use in bin. 59.77MiB client-requested in use in bin.
+2019-11-02 19:40:24.528147: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (8388608): 	Total Chunks: 10, Chunks in use: 10. 140.62MiB allocated for chunks. 140.62MiB in use in bin. 140.62MiB client-requested in use in bin.
+2019-11-02 19:40:24.528173: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (16777216): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2019-11-02 19:40:24.528189: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (33554432): 	Total Chunks: 7, Chunks in use: 7. 400.79MiB allocated for chunks. 400.79MiB in use in bin. 393.75MiB client-requested in use in bin.
+2019-11-02 19:40:24.528205: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (67108864): 	Total Chunks: 1, Chunks in use: 1. 64.16MiB allocated for chunks. 64.16MiB in use in bin. 56.25MiB client-requested in use in bin.
+2019-11-02 19:40:24.528219: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (134217728): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2019-11-02 19:40:24.528233: I tensorflow/core/common_runtime/bfc_allocator.cc:630] Bin (268435456): 	Total Chunks: 3, Chunks in use: 1. 9.45GiB allocated for chunks. 4.12GiB in use in bin. 4.12GiB client-requested in use in bin.
+2019-11-02 19:40:24.528246: I tensorflow/core/common_runtime/bfc_allocator.cc:646] Bin for 4.12GiB was 256.00MiB, Chunk State: 
+2019-11-02 19:40:24.528270: I tensorflow/core/common_runtime/bfc_allocator.cc:652]   Size: 2.09GiB | Requested Size: 16.48MiB | in_use: 0, prev:   Size: 3.52MiB | Requested Size: 3.52MiB | in_use: 1, next:   Size: 3.52MiB | Requested Size: 3.52MiB | in_use: 1
+2019-11-02 19:40:24.528286: I tensorflow/core/common_runtime/bfc_allocator.cc:652]   Size: 3.25GiB | Requested Size: 4B | in_use: 0, prev:   Size: 4.12GiB | Requested Size: 4.12GiB | in_use: 1
+2019-11-02 19:40:24.528303: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c000000 of size 1280
+2019-11-02 19:40:24.528316: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c000500 of size 1280
+2019-11-02 19:40:24.528326: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c000a00 of size 256
+2019-11-02 19:40:24.528342: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c000b00 of size 256
+2019-11-02 19:40:24.528351: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c000c00 of size 256
+2019-11-02 19:40:24.528363: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c000d00 of size 256
+2019-11-02 19:40:24.528373: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c000e00 of size 256
+2019-11-02 19:40:24.528382: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c000f00 of size 256
+2019-11-02 19:40:24.528395: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c001000 of size 256
+2019-11-02 19:40:24.528404: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c001100 of size 256
+2019-11-02 19:40:24.528413: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c001200 of size 256
+2019-11-02 19:40:24.528427: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c001300 of size 256
+2019-11-02 19:40:24.528436: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c001400 of size 256
+2019-11-02 19:40:24.528448: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c001500 of size 256
+2019-11-02 19:40:24.528457: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c001600 of size 256
+2019-11-02 19:40:24.528466: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c001700 of size 256
+2019-11-02 19:40:24.528475: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c001800 of size 256
+2019-11-02 19:40:24.528484: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c001900 of size 256
+2019-11-02 19:40:24.528507: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c001a00 of size 256
+2019-11-02 19:40:24.528522: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c001b00 of size 256
+2019-11-02 19:40:24.528536: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c001c00 of size 256
+2019-11-02 19:40:24.528545: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c001d00 of size 256
+2019-11-02 19:40:24.528557: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c001e00 of size 256
+2019-11-02 19:40:24.528566: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c001f00 of size 256
+2019-11-02 19:40:24.528578: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c002000 of size 256
+2019-11-02 19:40:24.528587: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c002100 of size 256
+2019-11-02 19:40:24.528599: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c002200 of size 256
+2019-11-02 19:40:24.528608: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c002300 of size 256
+2019-11-02 19:40:24.528620: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c002400 of size 256
+2019-11-02 19:40:24.528629: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c002500 of size 256
+2019-11-02 19:40:24.528641: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c002600 of size 256
+2019-11-02 19:40:24.528650: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c002700 of size 256
+2019-11-02 19:40:24.528662: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c002800 of size 256
+2019-11-02 19:40:24.528671: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c002900 of size 256
+2019-11-02 19:40:24.528680: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c002a00 of size 256
+2019-11-02 19:40:24.528693: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c002b00 of size 256
+2019-11-02 19:40:24.528702: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c002c00 of size 256
+2019-11-02 19:40:24.528714: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4b7c002d00 of size 512
+2019-11-02 19:40:24.528723: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c002f00 of size 256
+2019-11-02 19:40:24.528735: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c003000 of size 256
+2019-11-02 19:40:24.528745: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c003100 of size 256
+2019-11-02 19:40:24.528756: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c003200 of size 256
+2019-11-02 19:40:24.528766: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c003300 of size 256
+2019-11-02 19:40:24.528778: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c003400 of size 256
+2019-11-02 19:40:24.528787: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c003500 of size 256
+2019-11-02 19:40:24.528799: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4b7c003600 of size 1792
+2019-11-02 19:40:24.528808: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c003d00 of size 256
+2019-11-02 19:40:24.528820: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c003e00 of size 1024
+2019-11-02 19:40:24.528834: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c004200 of size 147456
+2019-11-02 19:40:24.528844: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c028200 of size 256
+2019-11-02 19:40:24.528854: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c028300 of size 256
+2019-11-02 19:40:24.528866: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4b7c028400 of size 1179648
+2019-11-02 19:40:24.528880: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c148400 of size 256
+2019-11-02 19:40:24.528889: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4b7c148500 of size 68608
+2019-11-02 19:40:24.528901: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c159100 of size 147456
+2019-11-02 19:40:24.528915: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4b7c17d100 of size 1280
+2019-11-02 19:40:24.528925: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c17d600 of size 256
+2019-11-02 19:40:24.528936: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c17d700 of size 256
+2019-11-02 19:40:24.528946: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c17d800 of size 147456
+2019-11-02 19:40:24.528958: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c1a1800 of size 256
+2019-11-02 19:40:24.528967: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4b7c1a1900 of size 2560
+2019-11-02 19:40:24.528978: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c1a2300 of size 256
+2019-11-02 19:40:24.528988: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4b7c1a2400 of size 256
+2019-11-02 19:40:24.529000: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c1a2500 of size 294912
+2019-11-02 19:40:24.529014: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4b7c1ea500 of size 512
+2019-11-02 19:40:24.529024: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c1ea700 of size 512
+2019-11-02 19:40:24.529036: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c1ea900 of size 589824
+2019-11-02 19:40:24.529049: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c27a900 of size 1024
+2019-11-02 19:40:24.529059: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c27ad00 of size 512
+2019-11-02 19:40:24.529068: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c27af00 of size 512
+2019-11-02 19:40:24.529081: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c27b100 of size 589824
+2019-11-02 19:40:24.529090: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c30b100 of size 512
+2019-11-02 19:40:24.529102: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c30b300 of size 589824
+2019-11-02 19:40:24.529111: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c39b300 of size 512
+2019-11-02 19:40:24.529123: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c39b500 of size 512
+2019-11-02 19:40:24.529133: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c39b700 of size 262144
+2019-11-02 19:40:24.529145: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c3db700 of size 512
+2019-11-02 19:40:24.529164: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4b7c3db900 of size 512
+2019-11-02 19:40:24.529174: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c3dbb00 of size 512
+2019-11-02 19:40:24.529187: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4b7c3dbd00 of size 1024
+2019-11-02 19:40:24.529197: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c3dc100 of size 1179648
+2019-11-02 19:40:24.529209: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c4fc100 of size 1024
+2019-11-02 19:40:24.529223: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c4fc500 of size 1024
+2019-11-02 19:40:24.529233: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4b7c4fc900 of size 768
+2019-11-02 19:40:24.529242: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c4fcc00 of size 256
+2019-11-02 19:40:24.529255: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c4fcd00 of size 256
+2019-11-02 19:40:24.529265: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c4fce00 of size 256
+2019-11-02 19:40:24.529276: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4b7c4fcf00 of size 920576
+2019-11-02 19:40:24.529287: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c5ddb00 of size 921600
+2019-11-02 19:40:24.529298: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4b7c6beb00 of size 102144
+2019-11-02 19:40:24.529308: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c6d7a00 of size 256
+2019-11-02 19:40:24.529320: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c6d7b00 of size 256
+2019-11-02 19:40:24.529329: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c6d7c00 of size 512
+2019-11-02 19:40:24.529341: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c6d7e00 of size 512
+2019-11-02 19:40:24.529351: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c6d8000 of size 512
+2019-11-02 19:40:24.529362: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c6d8200 of size 512
+2019-11-02 19:40:24.529372: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c6d8400 of size 512
+2019-11-02 19:40:24.529383: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c6d8600 of size 512
+2019-11-02 19:40:24.529393: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c6d8800 of size 512
+2019-11-02 19:40:24.529404: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c6d8a00 of size 512
+2019-11-02 19:40:24.529414: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c6d8c00 of size 512
+2019-11-02 19:40:24.529425: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c6d8e00 of size 512
+2019-11-02 19:40:24.529435: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4b7c6d9000 of size 512
+2019-11-02 19:40:24.529444: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c6d9200 of size 512
+2019-11-02 19:40:24.529456: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c6d9400 of size 512
+2019-11-02 19:40:24.529465: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4b7c6d9600 of size 3072
+2019-11-02 19:40:24.529477: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c6da200 of size 1024
+2019-11-02 19:40:24.529487: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c6da600 of size 1024
+2019-11-02 19:40:24.529499: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c6daa00 of size 1024
+2019-11-02 19:40:24.529509: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c6dae00 of size 1024
+2019-11-02 19:40:24.529521: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4b7c6db200 of size 67584
+2019-11-02 19:40:24.529531: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c6eba00 of size 1024
+2019-11-02 19:40:24.529542: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c6ebe00 of size 1024
+2019-11-02 19:40:24.529552: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4b7c6ec200 of size 735488
+2019-11-02 19:40:24.529563: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c79fb00 of size 921600
+2019-11-02 19:40:24.529574: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b7c880b00 of size 66357504
+2019-11-02 19:40:24.529586: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b807c9400 of size 58984704
+2019-11-02 19:40:24.529597: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b84009d00 of size 58982400
+2019-11-02 19:40:24.529606: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b87849d00 of size 58982400
+2019-11-02 19:40:24.529618: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b8b089d00 of size 67276800
+2019-11-02 19:40:24.529628: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b8f0b2d00 of size 58982400
+2019-11-02 19:40:24.529640: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b928f2d00 of size 14745600
+2019-11-02 19:40:24.529654: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b93702d00 of size 58982400
+2019-11-02 19:40:24.529664: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b96f42d00 of size 14745600
+2019-11-02 19:40:24.529676: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b97d52d00 of size 58982400
+2019-11-02 19:40:24.529686: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b9b592d00 of size 14745600
+2019-11-02 19:40:24.529697: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b9c3a2d00 of size 14745600
+2019-11-02 19:40:24.529707: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b9d1b2d00 of size 14745600
+2019-11-02 19:40:24.529718: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b9dfc2d00 of size 14745600
+2019-11-02 19:40:24.529728: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b9edd2d00 of size 14745600
+2019-11-02 19:40:24.529739: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4b9fbe2d00 of size 14745600
+2019-11-02 19:40:24.529750: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba09f2d00 of size 3686400
+2019-11-02 19:40:24.529762: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba0d76d00 of size 7372800
+2019-11-02 19:40:24.529775: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba147ed00 of size 14745600
+2019-11-02 19:40:24.529785: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba228ed00 of size 7372800
+2019-11-02 19:40:24.529794: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba2996d00 of size 14745600
+2019-11-02 19:40:24.529806: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba37a6d00 of size 3686400
+2019-11-02 19:40:24.529816: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba3b2ad00 of size 7372800
+2019-11-02 19:40:24.529828: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba4232d00 of size 7372800
+2019-11-02 19:40:24.529838: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba493ad00 of size 7372800
+2019-11-02 19:40:24.529850: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba5042d00 of size 7372800
+2019-11-02 19:40:24.529860: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba574ad00 of size 1843200
+2019-11-02 19:40:24.529872: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba590cd00 of size 1843200
+2019-11-02 19:40:24.529882: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba5aced00 of size 1843200
+2019-11-02 19:40:24.529894: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba5c90d00 of size 7372800
+2019-11-02 19:40:24.529904: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba6398d00 of size 7372800
+2019-11-02 19:40:24.529915: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba6aa0d00 of size 1843200
+2019-11-02 19:40:24.529925: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba6c62d00 of size 1843200
+2019-11-02 19:40:24.529937: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba6e24d00 of size 1843200
+2019-11-02 19:40:24.529946: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba6fe6d00 of size 1843200
+2019-11-02 19:40:24.529958: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba71a8d00 of size 1843200
+2019-11-02 19:40:24.529967: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4ba736ad00 of size 5914624
+2019-11-02 19:40:24.529976: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba790ed00 of size 1843200
+2019-11-02 19:40:24.529988: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4ba7ad0d00 of size 1843200
+2019-11-02 19:40:24.529997: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba7c92d00 of size 1843200
+2019-11-02 19:40:24.530009: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba7e54d00 of size 1843200
+2019-11-02 19:40:24.530018: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4ba8016d00 of size 1179648
+2019-11-02 19:40:24.530030: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba8136d00 of size 3686400
+2019-11-02 19:40:24.530039: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba84bad00 of size 3686400
+2019-11-02 19:40:24.530050: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba883ed00 of size 3686400
+2019-11-02 19:40:24.530060: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4ba8bc2d00 of size 5802240
+2019-11-02 19:40:24.530072: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba914b600 of size 3686400
+2019-11-02 19:40:24.530082: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4ba94cf600 of size 3686400
+2019-11-02 19:40:24.530093: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba9853600 of size 1843200
+2019-11-02 19:40:24.530103: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4ba9a15600 of size 1843200
+2019-11-02 19:40:24.530115: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4ba9bd7600 of size 3686400
+2019-11-02 19:40:24.530124: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4ba9f5b600 of size 1872384
+2019-11-02 19:40:24.530136: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4baa124800 of size 5500416
+2019-11-02 19:40:24.530159: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4baa663600 of size 3686400
+2019-11-02 19:40:24.530171: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4baa9e7600 of size 2240806912
+2019-11-02 19:40:24.530183: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4c302e7600 of size 3686400
+2019-11-02 19:40:24.530193: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Chunk at 0x2b4c3066b600 of size 4423680000
+2019-11-02 19:40:24.530206: I tensorflow/core/common_runtime/bfc_allocator.cc:665] Free  at 0x2b4d3812b600 of size 3486887936
+2019-11-02 19:40:24.530216: I tensorflow/core/common_runtime/bfc_allocator.cc:671]      Summary of in-use Chunks by size: 
+2019-11-02 19:40:24.530232: I tensorflow/core/common_runtime/bfc_allocator.cc:674] 55 Chunks of size 256 totalling 13.8KiB
+2019-11-02 19:40:24.530247: I tensorflow/core/common_runtime/bfc_allocator.cc:674] 20 Chunks of size 512 totalling 10.0KiB
+2019-11-02 19:40:24.530261: I tensorflow/core/common_runtime/bfc_allocator.cc:674] 10 Chunks of size 1024 totalling 10.0KiB
+2019-11-02 19:40:24.530275: I tensorflow/core/common_runtime/bfc_allocator.cc:674] 2 Chunks of size 1280 totalling 2.5KiB
+2019-11-02 19:40:24.530290: I tensorflow/core/common_runtime/bfc_allocator.cc:674] 3 Chunks of size 147456 totalling 432.0KiB
+2019-11-02 19:40:24.530305: I tensorflow/core/common_runtime/bfc_allocator.cc:674] 1 Chunks of size 262144 totalling 256.0KiB
+2019-11-02 19:40:24.530320: I tensorflow/core/common_runtime/bfc_allocator.cc:674] 1 Chunks of size 294912 totalling 288.0KiB
+2019-11-02 19:40:24.530334: I tensorflow/core/common_runtime/bfc_allocator.cc:674] 3 Chunks of size 589824 totalling 1.69MiB
+2019-11-02 19:40:24.530348: I tensorflow/core/common_runtime/bfc_allocator.cc:674] 2 Chunks of size 921600 totalling 1.76MiB
+2019-11-02 19:40:24.530362: I tensorflow/core/common_runtime/bfc_allocator.cc:674] 1 Chunks of size 1179648 totalling 1.12MiB
+2019-11-02 19:40:24.530374: I tensorflow/core/common_runtime/bfc_allocator.cc:674] 12 Chunks of size 1843200 totalling 21.09MiB
+2019-11-02 19:40:24.530390: I tensorflow/core/common_runtime/bfc_allocator.cc:674] 9 Chunks of size 3686400 totalling 31.64MiB
+2019-11-02 19:40:24.530404: I tensorflow/core/common_runtime/bfc_allocator.cc:674] 1 Chunks of size 5500416 totalling 5.25MiB
+2019-11-02 19:40:24.530419: I tensorflow/core/common_runtime/bfc_allocator.cc:674] 8 Chunks of size 7372800 totalling 56.25MiB
+2019-11-02 19:40:24.530433: I tensorflow/core/common_runtime/bfc_allocator.cc:674] 10 Chunks of size 14745600 totalling 140.62MiB
+2019-11-02 19:40:24.530448: I tensorflow/core/common_runtime/bfc_allocator.cc:674] 5 Chunks of size 58982400 totalling 281.25MiB
+2019-11-02 19:40:24.530463: I tensorflow/core/common_runtime/bfc_allocator.cc:674] 1 Chunks of size 58984704 totalling 56.25MiB
+2019-11-02 19:40:24.530478: I tensorflow/core/common_runtime/bfc_allocator.cc:674] 1 Chunks of size 66357504 totalling 63.28MiB
+2019-11-02 19:40:24.530492: I tensorflow/core/common_runtime/bfc_allocator.cc:674] 1 Chunks of size 67276800 totalling 64.16MiB
+2019-11-02 19:40:24.530506: I tensorflow/core/common_runtime/bfc_allocator.cc:674] 1 Chunks of size 4423680000 totalling 4.12GiB
+2019-11-02 19:40:24.530520: I tensorflow/core/common_runtime/bfc_allocator.cc:678] Sum Total of in-use chunks: 4.83GiB
+2019-11-02 19:40:24.530539: I tensorflow/core/common_runtime/bfc_allocator.cc:680] Stats: 
+Limit:                 10937198183
+InUse:                  5184274688
+MaxInUse:               5220269824
+NumAllocs:                     565
+MaxAllocSize:           4423680000
+
+2019-11-02 19:40:24.530567: W tensorflow/core/common_runtime/bfc_allocator.cc:279] ********___________________******************************************_______________________________
+2019-11-02 19:40:24.530599: W tensorflow/core/framework/op_kernel.cc:1273] OP_REQUIRES failed at cwise_ops_common.cc:70 : Resource exhausted: OOM when allocating tensor with shape[3,30,40,30,40,256] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+[11/02/2019 19:43:05 INFO] Running command TRAIN
+[11/02/2019 19:43:05 INFO] Number of GPUs detected: 2
+[11/02/2019 19:43:09 WARNING] From /cluster/apps/python/3.6.4/lib64/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/base.py:198: retry (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the retry module or similar alternatives.
+2019-11-02 19:43:39.159543: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-11-02 19:43:39.563781: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1344] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:0d:00.0
+totalMemory: 10.92GiB freeMemory: 10.77GiB
+2019-11-02 19:43:39.791468: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1344] Found device 1 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:0f:00.0
+totalMemory: 10.92GiB freeMemory: 10.77GiB
+2019-11-02 19:43:39.793198: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0, 1
+2019-11-02 19:43:40.702844: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-11-02 19:43:40.702885: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 1 
+2019-11-02 19:43:40.702894: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N Y 
+2019-11-02 19:43:40.702898: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 1:   Y N 
+2019-11-02 19:43:40.704145: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10430 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:0d:00.0, compute capability: 6.1)
+2019-11-02 19:43:40.886932: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10430 MB memory) -> physical GPU (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:0f:00.0, compute capability: 6.1)
+[11/02/2019 19:43:41 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:41 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:41 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:41 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:41 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:41 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:41 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:41 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:41 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:41 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:41 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:41 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:42 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:42 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:42 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:42 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:42 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:42 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:42 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:42 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:42 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:42 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:42 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:42 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:43 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+[11/02/2019 19:43:45 INFO] Scale of 0 disables regularizer.
+2019-11-02 19:43:45.695938: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0, 1
+2019-11-02 19:43:45.696052: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-11-02 19:43:45.696064: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 1 
+2019-11-02 19:43:45.696070: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N Y 
+2019-11-02 19:43:45.696075: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 1:   Y N 
+2019-11-02 19:43:45.696703: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10430 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:0d:00.0, compute capability: 6.1)
+2019-11-02 19:43:45.696988: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10430 MB memory) -> physical GPU (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:0f:00.0, compute capability: 6.1)
+[11/02/2019 19:44:04 INFO] Start training
+2019-11-02 19:44:12.357553: I tensorflow/core/kernels/cuda_solvers.cc:159] Creating CudaSolver handles for stream 0x2d2e9fd0
+2019-11-02 19:44:14.740628: I tensorflow/core/kernels/cuda_solvers.cc:159] Creating CudaSolver handles for stream 0xf1c3020
+[11/02/2019 19:45:05 INFO] Iter    0: loss 26.0874, precision 0.0037, recall 0.0077
+[11/02/2019 20:09:04 INFO] Iter 5000: loss 5.6488, precision 0.0272, recall 0.0603
+[11/02/2019 20:33:28 INFO] Iter 10000: loss 3.6379, precision 0.0486, recall 0.1052
+[11/02/2019 20:55:14 INFO] Iter 15000: loss 2.6789, precision 0.0826, recall 0.1772
+[11/02/2019 21:15:11 INFO] Iter 20000: loss 2.4092, precision 0.1275, recall 0.2574
+[11/02/2019 21:35:08 INFO] Iter 25000: loss 1.6250, precision 0.1916, recall 0.3253
+[11/02/2019 21:55:04 INFO] Iter 30000: loss 1.5479, precision 0.2319, recall 0.3723
+[11/02/2019 22:15:00 INFO] Iter 35000: loss 1.5123, precision 0.2723, recall 0.4119
+[11/02/2019 22:34:56 INFO] Iter 40000: loss 1.4282, precision 0.2930, recall 0.4453
+[11/02/2019 22:54:52 INFO] Iter 45000: loss 1.3856, precision 0.2913, recall 0.4706
+[11/02/2019 23:14:47 INFO] Iter 50000: loss 1.2886, precision 0.2760, recall 0.4533
+[11/02/2019 23:34:43 INFO] Iter 55000: loss 1.4009, precision 0.3084, recall 0.4988
+[11/02/2019 23:54:38 INFO] Iter 60000: loss 1.3107, precision 0.3355, recall 0.5177
+[11/03/2019 00:14:40 INFO] Iter 65000: loss 1.7048, precision 0.3322, recall 0.5287
+[11/03/2019 00:34:35 INFO] Iter 70000: loss 1.0025, precision 0.3433, recall 0.5367
+[11/03/2019 00:54:31 INFO] Iter 75000: loss 1.5769, precision 0.3428, recall 0.5448
+[11/03/2019 01:14:25 INFO] Iter 80000: loss 1.1283, precision 0.3512, recall 0.5497
+[11/03/2019 01:34:21 INFO] Iter 85000: loss 1.3357, precision 0.3420, recall 0.5537
+[11/03/2019 01:54:17 INFO] Iter 90000: loss 1.1635, precision 0.3552, recall 0.5550
+[11/03/2019 02:14:14 INFO] Iter 95000: loss 0.8720, precision 0.3639, recall 0.5579
+[11/03/2019 02:34:11 INFO] Iter 100000: loss 1.0154, precision 0.3488, recall 0.5606
+[11/03/2019 02:54:08 INFO] Iter 105000: loss 1.0073, precision 0.3534, recall 0.5673
+[11/03/2019 03:14:05 INFO] Iter 110000: loss 1.1623, precision 0.3624, recall 0.5701
+[11/03/2019 03:34:08 INFO] Iter 115000: loss 0.9907, precision 0.3594, recall 0.5629
+[11/03/2019 03:54:08 INFO] Iter 120000: loss 1.2128, precision 0.3784, recall 0.5711
+[11/03/2019 04:14:05 INFO] Iter 125000: loss 1.2846, precision 0.3640, recall 0.5720
+[11/03/2019 04:34:02 INFO] Iter 130000: loss 1.1994, precision 0.3616, recall 0.5763
+[11/03/2019 04:53:59 INFO] Iter 135000: loss 1.1397, precision 0.3687, recall 0.5797
+[11/03/2019 05:13:57 INFO] Iter 140000: loss 1.2604, precision 0.3605, recall 0.5754
+[11/03/2019 05:33:54 INFO] Iter 145000: loss 1.4032, precision 0.3711, recall 0.5808
+[11/03/2019 05:53:51 INFO] Iter 150000: loss 0.9151, precision 0.3752, recall 0.5823
+[11/03/2019 06:13:48 INFO] Iter 155000: loss 1.1427, precision 0.3720, recall 0.5870
+[11/03/2019 06:33:46 INFO] Iter 160000: loss 0.9974, precision 0.3686, recall 0.5850
+[11/03/2019 06:53:43 INFO] Iter 165000: loss 1.4975, precision 0.3698, recall 0.5883
+[11/03/2019 07:13:41 INFO] Iter 170000: loss 1.2266, precision 0.3691, recall 0.5886
+[11/03/2019 07:33:39 INFO] Iter 175000: loss 1.3844, precision 0.3749, recall 0.5914
+[11/03/2019 07:53:36 INFO] Iter 180000: loss 1.3627, precision 0.3694, recall 0.5789
+[11/03/2019 08:13:33 INFO] Iter 185000: loss 1.0469, precision 0.3564, recall 0.5900
+[11/03/2019 08:33:31 INFO] Iter 190000: loss 1.3856, precision 0.3791, recall 0.5937
+[11/03/2019 08:53:29 INFO] Iter 195000: loss 1.1223, precision 0.3752, recall 0.5937
+[11/03/2019 09:13:31 INFO] Iter 200000: loss 1.1352, precision 0.3765, recall 0.5978
+[11/03/2019 09:33:33 INFO] Iter 205000: loss 1.0245, precision 0.3596, recall 0.5882
+[11/03/2019 09:53:35 INFO] Iter 210000: loss 0.9231, precision 0.3639, recall 0.5945
+[11/03/2019 10:13:36 INFO] Iter 215000: loss 0.9667, precision 0.3744, recall 0.5961
+[11/03/2019 10:33:38 INFO] Iter 220000: loss 1.0049, precision 0.3757, recall 0.5928
+[11/03/2019 10:53:39 INFO] Iter 225000: loss 1.0517, precision 0.3862, recall 0.5946
+[11/03/2019 11:13:40 INFO] Iter 230000: loss 0.9133, precision 0.3780, recall 0.5978
+[11/03/2019 11:33:41 INFO] Iter 235000: loss 1.2023, precision 0.3734, recall 0.5989
+[11/03/2019 11:53:43 INFO] Iter 240000: loss 1.3015, precision 0.3775, recall 0.5998
+[11/03/2019 12:13:44 INFO] Iter 245000: loss 0.9483, precision 0.3670, recall 0.5991
+[11/03/2019 12:33:46 INFO] Iter 250000: loss 1.0677, precision 0.3916, recall 0.6028
+[11/03/2019 12:53:49 INFO] Iter 255000: loss 1.1519, precision 0.3679, recall 0.5959
+[11/03/2019 13:13:51 INFO] Iter 260000: loss 1.4319, precision 0.3837, recall 0.6004
+[11/03/2019 13:33:52 INFO] Iter 265000: loss 1.1464, precision 0.3803, recall 0.6020
+[11/03/2019 13:53:53 INFO] Iter 270000: loss 0.8592, precision 0.3823, recall 0.6057
+[11/03/2019 14:13:55 INFO] Iter 275000: loss 1.2274, precision 0.3723, recall 0.6018
+[11/03/2019 14:33:57 INFO] Iter 280000: loss 1.2828, precision 0.3765, recall 0.6097
+[11/03/2019 14:53:59 INFO] Iter 285000: loss 1.0825, precision 0.3766, recall 0.6072
+[11/03/2019 15:14:00 INFO] Iter 290000: loss 1.1391, precision 0.3997, recall 0.6085
+[11/03/2019 15:34:02 INFO] Iter 295000: loss 1.2988, precision 0.3893, recall 0.6060
+[11/03/2019 15:54:00 INFO] Training finished
+[11/03/2019 15:54:03 INFO] Saving checkpoint for iteration #300000
